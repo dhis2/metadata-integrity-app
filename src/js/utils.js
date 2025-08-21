@@ -9,3 +9,11 @@ export function getContextPath() {
 }
 
 export var baseUrl = getContextPath() + "/api/";
+
+export const shouldRenderHeaderBar = window.self === window.top;
+
+export function initializeEmbeddedMode() {
+    if (!shouldRenderHeaderBar) {
+        document.documentElement.classList.add('embedded');
+    }
+}

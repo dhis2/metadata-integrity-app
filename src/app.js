@@ -8,6 +8,7 @@ window.jQuery = $;
 import DataTable from "datatables.net";
 window.DataTable = DataTable;
 import {getContextPath} from "./js/utils.js";
+import { initializeEmbeddedMode } from "./js/utils.js";
 import { fetchUpdatedCachedResults } from "./js/api-utils.js";
 import { runIntegrityChecks } from "./js/api-utils.js";
 import { runDetails } from "./js/api-utils.js";
@@ -22,6 +23,8 @@ import { fetchSummaryMetadata } from "./js/api-utils.js";
 //CSS
 import "./css/style.css";
 import "./css/jquery.dataTables.min.css"
+
+initializeEmbeddedMode();
 
 //Test setup by calling API
 /* async function testApi() {
