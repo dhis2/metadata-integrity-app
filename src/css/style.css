@@ -52,3 +52,11 @@ body {
 .mainView {
 	margin-top: 48px;
 }
+
+.embedded .headerBar {
+	display: none;
+}
+
+.embedded .mainView {
+	margin-top: 0;
+}
